@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>Dispatcher</servlet-name>
+        <servlet-class>Dispatcher</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Dispatcher</servlet-name>
+        <url-pattern>/Dispatcher</url-pattern>
+        <url-pattern>/login.form</url-pattern>
+        <url-pattern>/login.action</url-pattern>
+        <url-pattern>/dashboard</url-pattern>
+        <url-pattern>/logout</url-pattern>
+        <url-pattern>/myprofile</url-pattern>   
+         <url-pattern>/userEdit.form</url-pattern> 
+          <url-pattern>/userEdit.save</url-pattern> 
+        <url-pattern>/Editmyprofile.save</url-pattern>
+        <url-pattern>/my_books_manegment</url-pattern>
+          <url-pattern>/one_books_manegment</url-pattern>      
+        <url-pattern>/user_manegment</url-pattern>
+        <url-pattern>/UserDisableEnable</url-pattern>
+        <url-pattern>/add_user.form</url-pattern>
+        <url-pattern>/add_user.save</url-pattern> 
+        <url-pattern>/userDelete</url-pattern> 
+        <url-pattern>/viewUserBooks</url-pattern>  
+        <url-pattern>/add_book.form</url-pattern>
+        <url-pattern>/add_book.save</url-pattern>         
+        <url-pattern>/bookEdit.form</url-pattern>  
+        <url-pattern>/bookEdit.save</url-pattern>  
+        <url-pattern>/bookLend.form</url-pattern>                             
+        <url-pattern>/bookLend.save</url-pattern> 
+        <url-pattern>/bookDelete</url-pattern> 
+        <url-pattern>/by_me_books_manegment</url-pattern> 
+        <url-pattern>/to_me_books_manegment</url-pattern>
+        <url-pattern>/bookReturn</url-pattern> 
+        <url-pattern>/OthersBooks</url-pattern>
+        <url-pattern>/AskLend</url-pattern>
+        <url-pattern>/viewNotifications</url-pattern>
+        <url-pattern>/notificationReaded</url-pattern>
+        
+
+       <url-pattern>/bookAskReturn</url-pattern>                      
+                     
+    </servlet-mapping>
+      <welcome-file-list>
+        <welcome-file>login.form</welcome-file>
+    </welcome-file-list>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
